@@ -2,32 +2,244 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gallery - DJ KELLYWISE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ KELLYWISE | Gallery</title>
+
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #fff;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Gallery</h1>
+<!-- HEADER -->
+<header id="main-header">
+  <div class="container">
+    <nav>
+      <div class="logo-wrapper">
+        <i class="fas fa-headphones"></i>
+        <h1 class="logo">DJ KELLYWISE</h1>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="videos.html">Mixes</a></li>
+        <li><a href="contact.html">Bookings</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="videos.html">Videos</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<section class="gallery">
-  <img src="images/photo1.jpg">
-  <img src="images/photo2.jpg">
-  <img src="images/photo3.jpg">
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="page-header-bg" style="background: linear-gradient(135deg, #000000 0%, #1a936f 100%);"></div>
+  <div class="page-header-content">
+    <h1>DJ GALLERY</h1>
+    <p>Live Moments • Energy • Vibes</p>
+  </div>
 </section>
 
+<!-- FILTER -->
+<section class="section gallery-section">
+  <div class="container-section">
+
+    <div class="gallery-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="live">Live Shows</button>
+      <button class="filter-btn" data-filter="studio">Studio</button>
+      <button class="filter-btn" data-filter="crowd">Crowd</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery-masonry">
+
+      <div class="gallery-item large" data-category="live">
+        <img src="images/dj1.jpeg">
+        <div class="gallery-overlay">
+          <h4>Live Performance</h4>
+          <p>DJ KELLYWISE on stage</p>
+          <button class="view-btn" onclick="openLightbox(this)">
+            <i class="fas fa-expand"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="studio">
+        <img src="images/dj2.jpeg">
+        <div class="gallery-overlay">
+          <h4>Studio Session</h4>
+          <button class="view-btn" onclick="openLightbox(this)">
+            <i class="fas fa-expand"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="crowd">
+        <img src="images/dj3.jpeg">
+        <div class="gallery-overlay">
+          <h4>Crowd Energy</h4>
+          <button class="view-btn" onclick="openLightbox(this)">
+            <i class="fas fa-expand"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery-item wide" data-category="events">
+        <img src="images/dj4.jpeg">
+        <div class="gallery-overlay">
+          <h4>Event Night</h4>
+          <p>Turn up the vibe 🔥</p>
+          <button class="view-btn" onclick="openLightbox(this)">
+            <i class="fas fa-expand"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="live">
+        <img src="images/dj5.jpeg">
+        <div class="gallery-overlay">
+          <h4>Club Night</h4>
+          <button class="view-btn" onclick="openLightbox(this)">
+            <i class="fas fa-expand"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="crowd">
+        <img src="images/dj6.jpeg">
+        <div class="gallery-overlay">
+          <h4>Fans & Vibes</h4>
+          <button class="view-btn" onclick="openLightbox(this)">
+            <i class="fas fa-expand"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img">
+  <div class="lightbox-caption"></div>
+  <button class="lightbox-prev" onclick="changeImage(-1)">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <button class="lightbox-next" onclick="changeImage(1)">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+</div>
+
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 DJ KELLYWISE</p>
+  <div class="container-section">
+    <div class="footer-content">
+
+      <div class="footer-brand">
+        <h3>DJ KELLYWISE</h3>
+        <p>Bringing the best vibes to every stage 🎧</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Mixes</a></li>
+          <li><a href="#">Bookings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Bookings</h4>
+        <p><i class="fas fa-phone"></i> 07040077721</p>
+        <p><i class="fas fa-map-marker-alt"></i> Nigeria</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 DJ KELLYWISE</p>
+    </div>
+  </div>
 </footer>
+
+<!-- SCRIPT -->
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.onclick = () => {
+  navLinks.classList.toggle('active');
+};
+
+/* FILTER */
+const filterBtns = document.querySelectorAll('.filter-btn');
+const items = document.querySelectorAll('.gallery-item');
+
+filterBtns.forEach(btn => {
+  btn.onclick = () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    let filter = btn.dataset.filter;
+
+    items.forEach(item => {
+      if (filter === "all" || item.dataset.category === filter) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  };
+});
+
+/* LIGHTBOX */
+let index = 0;
+const imgs = Array.from(document.querySelectorAll('.gallery-item img'));
+
+function openLightbox(btn) {
+  const img = btn.closest('.gallery-item').querySelector('img');
+  index = imgs.indexOf(img);
+  update();
+  document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+
+function update() {
+  const img = imgs[index];
+  document.getElementById('lightbox-img').src = img.src;
+}
+
+function changeImage(dir) {
+  index += dir;
+  if (index < 0) index = imgs.length - 1;
+  if (index >= imgs.length) index = 0;
+  update();
+}
+</script>
 
 </body>
 </html>
