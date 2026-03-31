@@ -2,32 +2,276 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Videos - DJ KELLYWISE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Sets | DJ KELLYWISE - Feel The Rhythm</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header>
-  <h1>My Videos</h1>
-</header>
+  <header id="main-header">
+    <div class="container">
+      <nav>
+        <div class="logo-wrapper">
+          <i class="fas fa-compact-disc fa-spin"></i>
+          <h1 class="logo">DJ KELLYWISE</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biography.html">Bio</a></li>
+          <li><a href="mixtapes.html">Mixtapes</a></li>
+          <li><a href="videos.html" class="active">Live Sets</a></li>
+          <li><a href="gallery.html">Tour Shots</a></li>
+          <li><a href="contact.html">Bookings</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="videos.html">Videos</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <section class="page-header">
+    <div class="page-header-bg" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);"></div>
+    <div class="page-header-content">
+      <h1>The Visual Experience</h1>
+      <p>Watch DJ KELLYWISE shut down the biggest stages</p>
+    </div>
+  </section>
 
-<section>
-  <video controls width="300">
-    <source src="videos/video1.mp4" type="video/mp4">
-  </video>
-</section>
+  <section class="section">
+    <div class="container-section">
+      <div class="section-header">
+        <span class="section-tag">Hot New Set</span>
+        <h2>Live at The Arena 2026</h2>
+        <p class="section-subtitle">2 Hours of Non-Stop Afrobeat & Amapiano</p>
+      </div>
+      
+      <div class="featured-video">
+        <div class="video-container">
+          <video controls poster="images/dj-performing.jpeg">
+            <source src="videos/kellywise-live-set.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-info">
+          <h3>The "Wise One" World Tour</h3>
+          <p>Catch the highlights from the sold-out Port Harcourt homecoming concert. The energy was unmatched!</p>
+          <div class="video-stats">
+            <span><i class="fas fa-headphones"></i> 45K Streams</span>
+            <span><i class="fas fa-clock"></i> 12:45</span>
+            <span><i class="fas fa-fire"></i> Trending #1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 DJ KELLYWISE</p>
-</footer>
+  <section class="section video-gallery-section">
+    <div class="container-section">
+      <div class="section-header">
+        <span class="section-tag">The Vault</span>
+        <h2>Explore The Archives</h2>
+        <p class="section-subtitle">Legendary nights caught on camera</p>
+      </div>
+
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-player">
+            <video controls poster="images/club-neon.jpeg">
+              <source src="videos/club-vibes.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-details">
+            <h4>Late Night Sessions</h4>
+            <p>Underground house vibes from the private rooftop set</p>
+            <div class="video-meta">
+              <span><i class="fas fa-clock"></i> 5:20</span>
+              <span><i class="fas fa-eye"></i> 8.2K</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-player">
+            <video controls poster="images/wedding-dj.jpeg">
+              <source src="videos/wedding-party.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-details">
+            <h4>The Royal Wedding</h4>
+            <p>Keeping the dancefloor packed all night long</p>
+            <div class="video-meta">
+              <span><i class="fas fa-clock"></i> 4:15</span>
+              <span><i class="fas fa-eye"></i> 12K</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-player">
+            <video controls poster="images/studio.jpeg">
+              <source src="videos/studio-session.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-details">
+            <h4>In The Lab</h4>
+            <p>Behind the scenes creating the 2026 Summer Mix</p>
+            <div class="video-meta">
+              <span><i class="fas fa-clock"></i> 10:00</span>
+              <span><i class="fas fa-eye"></i> 5.1K</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-player">
+            <video controls poster="images/beach-fest.jpeg">
+              <source src="videos/beach-set.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-details">
+            <h4>Beach Festival 2025</h4>
+            <p>Throwback to the ultimate sunset chill session</p>
+            <div class="video-meta">
+              <span><i class="fas fa-clock"></i> 8:30</span>
+              <span><i class="fas fa-eye"></i> 15K</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-player">
+            <video controls poster="images/tech-booth.jpeg">
+              <source src="videos/gear-talk.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-details">
+            <h4>Gear & Setup</h4>
+            <p>A look at the professional Pioneer DJ rig</p>
+            <div class="video-meta">
+              <span><i class="fas fa-clock"></i> 6:45</span>
+              <span><i class="fas fa-eye"></i> 3.9K</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-player">
+            <video controls poster="images/fans.jpeg">
+              <source src="videos/fan-reaction.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-details">
+            <h4>Fan Appreciation</h4>
+            <p>The energy from the crowd is why we do this!</p>
+            <div class="video-meta">
+              <span><i class="fas fa-clock"></i> 3:30</span>
+              <span><i class="fas fa-eye"></i> 9.3K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section upload-section">
+    <div class="container-section">
+      <div class="upload-box">
+        <i class="fas fa-bolt" style="font-size: 3rem; color: #ffeb3b; margin-bottom: 20px;"></i>
+        <h3>Caught DJ KELLYWISE on Camera?</h3>
+        <p>Send us your clips from the party and get featured in the next Tour Movie!</p>
+        <form class="upload-form" id="uploadForm">
+          <input type="file" accept="video/*" id="video-upload" hidden>
+          <label for="video-upload" class="btn btn-primary" style="background: #2575fc; border: none;">Drop Your Clip</label>
+          <p class="upload-note">Maximum high-energy clips only (Max 100MB)</p>
+          <div id="uploadStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-section">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo-wrapper">
+            <i class="fas fa-compact-disc"></i>
+            <h3>DJ KELLYWISE</h3>
+          </div>
+          <p>Premium Sound. Unforgettable Vibes. Worldwide Bookings.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/djkellywise" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/2347040077721"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-mixcloud"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biography.html">Bio</a></li>
+            <li><a href="mixtapes.html">Mixtapes</a></li>
+            <li><a href="videos.html">Live Sets</a></li>
+            <li><a href="gallery.html">Tour Shots</a></li>
+            <li><a href="contact.html">Bookings</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Management</h4>
+          <p><i class="fas fa-phone"></i> 0905 763 7370</p>
+          <p><i class="fas fa-phone"></i> 0704 007 7721</p>
+          <p><i class="fas fa-map-marker-alt"></i> PH City, Nigeria</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DJ KELLYWISE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+
+    const videoUpload = document.getElementById('video-upload');
+    const uploadStatus = document.getElementById('uploadStatus');
+    
+    videoUpload.addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+        const file = this.files[0];
+        uploadStatus.innerHTML = `
+          <p style="color: #4cd137; margin-top: 10px;">
+            <i class="fas fa-check-circle"></i> Vibe Received: ${file.name}<br>
+            <small>Prep for the mainstage...</small>
+          </p>
+          <button type="button" class="btn btn-primary" style="margin-top: 10px; background: #6a11cb; border:none;" onclick="alert('Sending to the Kellywise Cloud...')">
+            Submit Clip
+          </button>
+        `;
+      }
+    });
+  </script>
 
 </body>
 </html>
